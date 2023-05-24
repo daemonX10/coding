@@ -1,6 +1,16 @@
+/**
+ * The program is a restaurant billing system that allows users to generate, save, and search invoices
+ * for customers.
+ * 
+ * @param name The name of the customer for whom the invoice is being generated.
+ * @param date The date of the order/invoice. It is automatically generated using the __DATE__ macro in
+ * C.
+ */
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+// A struct can be thought of as a template or a blueprint for creating variables
+// that have the same structure or organization of data.
 
 struct items{
     char item[20];
@@ -15,6 +25,13 @@ struct orders{
     struct items itm[50];
 };
 //functions to generate biils
+/**
+ * The function generates a bill header with the customer's name and date.
+ * 
+ * @param name a string variable that represents the name of the customer or person to whom the bill is
+ * being generated.
+ * @param date a string variable that represents the date of the bill
+ */
 void generateBillHeader(char name[50],char date[30]){
     printf("\n\n");
         printf("\t    ADV. Restaurant");
@@ -29,16 +46,31 @@ void generateBillHeader(char name[50],char date[30]){
         printf("\n---------------------------------------");
         printf("\n\n");
 }
+/**
+ * The function generates a bill body by printing the item name, quantity, and total price.
+ * 
+ * @param item a string variable that represents the name of an item being purchased.
+ * @param qty qty stands for quantity, which is the number of items purchased.
+ * @param price The price of one unit of the item.
+ */
 void generateBillBody(char item[30],int qty, float price){
     printf("%s\t\t",item); 
         printf("%d\t\t",qty); 
         printf("%.2f\t\t",qty * price); 
         printf("\n");
 }
-
-
-
+/**
+ * The function generates a bill footer with sub-total, discount, net total, CGST, SGST, and grand
+ * total.
+ * 
+ * @param total the total amount of the bill before any discounts or taxes are applied.
+ */
 void generateBillFooter(float total){
+   /* This code block is generating the bill footer with sub-total, discount, net total, CGST, SGST,
+   and grand total. It calculates the discount as 10% of the total, the net total as the total minus
+   the discount, the CGST as 9% of the net total, and the grand total as the net total plus twice
+   the CGST. It then prints out the bill footer with all the calculated values formatted to two
+   decimal places using the "%.2f" format specifier. */
     printf("\n");
     float dis = 0.1*total;
     float netTotal=total-dis;
@@ -54,8 +86,15 @@ void generateBillFooter(float total){
     printf("\nGrand Total\t\t\t%.2f",grandTotal);
     printf("\n---------------------------------------\n");
 }
+/**
+ * This is a program for a restaurant that allows the user to generate, save, and search invoices for
+ * customers.
+ * 
+ * @return The main function is returning an integer value of 0.
+ */
 int main(){
     
+    /* These are variable declarations in the main function. */
     int opt,n;
     struct orders ord;
     struct orders order;
@@ -63,6 +102,11 @@ int main(){
     char name[50];
     FILE *fp;
        //dashboard
+    /* The code block is creating a loop that will continue to execute as long as the value of the
+    variable `contFlag` is equal to the character 'y'. Within the loop, the code initializes the
+    variables `total` and `invoiceFound` to 0, displays a menu of options for the user to choose
+    from, prompts the user to enter their choice, and reads the input using `scanf()`. The
+    `fgetc(stdin)` function is used to clear the input buffer before reading the user's input. */
     while(contFlag == 'y'){
     float total = 0;
     int invoiceFound = 0;
@@ -77,6 +121,14 @@ int main(){
     scanf("%d",&opt);
     fgetc(stdin);
     switch(opt){
+        /* `case 1` is a switch case that is executed when the user selects the option to generate an
+        invoice. It prompts the user to enter the name of the customer, the number of items being
+        purchased, and the details of each item (name, quantity, and unit price). It then calculates
+        the total amount of the bill and generates the bill header, body, and footer using the
+        `generateBillHeader()`, `generateBillBody()`, and `generateBillFooter()` functions
+        respectively. Finally, it prompts the user to save the invoice and if the user chooses to
+        save it, the invoice details are written to a file named "RestaurantBill.dat" using the
+        `fwrite()` function. */
         case 1:
 
         printf("\nPlease enter the name of the customer:\t");
@@ -119,6 +171,12 @@ int main(){
         }
         break;
 
+        /* `case 2` is a switch case that is executed when the user selects the option to show all
+        invoices. It opens the file "RestaurantBill.dat" in read mode using the `fopen()` function
+        and reads the contents of the file using the `fread()` function. It then generates the bill
+        header, body, and footer for each invoice using the `generateBillHeader()`,
+        `generateBillBody()`, and `generateBillFooter()` functions respectively. Finally, it closes
+        the file using the `fclose()` function. */
         case 2:
 
         fp = fopen("RestaurantBill.dat","r");
@@ -136,6 +194,16 @@ int main(){
         fclose(fp);
         break;
 
+        /* `case 3` is a switch case that is executed when the user selects the option to search for a
+        specific invoice. It prompts the user to enter the name of the customer for whom the invoice
+        is being searched. It then opens the file "RestaurantBill.dat" in read mode using the
+        `fopen()` function and reads the contents of the file using the `fread()` function. It
+        compares the name entered by the user with the name of each customer in the file using the
+        `strcmp()` function. If a match is found, it generates the bill header, body, and footer for
+        that invoice using the `generateBillHeader()`, `generateBillBody()`, and
+        `generateBillFooter()` functions respectively. Finally, it sets the `invoiceFound` flag to 1
+        and closes the file using the `fclose()` function. If no match is found, it prints a message
+        indicating that the invoice for the specified customer does not exist. */
         case 3:
         printf("Enter the name of the customer:\t");
         fgetc(stdin);
@@ -163,6 +231,12 @@ int main(){
         fclose(fp);
         break;
 
+    /* `case 4` is a switch case that is executed when the user selects the option to exit the program.
+    It prints a goodbye message, terminates the program using the `exit()` function, and returns an
+    integer value of 0. The `default` case is executed when the user enters an invalid option, and
+    it prints a message indicating that the option is invalid. The program then prompts the user to
+    perform another operation by setting the value of `contFlag` to 'y'. Finally, the program prints
+    a goodbye message and returns an integer value of 0. */
     case 4:
     printf("\n\t\t Bye Bye :)\n\n");
     exit(0);
