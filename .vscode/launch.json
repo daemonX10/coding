@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "HelloF",
+      "request": "launch",
+      "mainClass": "HelloF",
+      "projectName": "coding_4d509099"
+    },
+    {
       "type": "lldb",
       "request": "launch",
       "name": "Debug",
