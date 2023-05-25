@@ -30,3 +30,4 @@ int main(){
     }cout<<pair;
     return 0;
 }
+// explain the above code
