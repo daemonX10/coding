@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Class</title>
+    <style>
+         .hello:hover {
+            background-color: black ;
+            color: white;
+            border:2px solid red;
+    }
+    input:focus{
+      background-color: black;
+      font-size: 25px;
+      color: greenyellow;
+    }
+    a:nth-child(2n){
+      background-color: pink;
+    }
+    /*
+    a{
+      font-size: 200px;
+      background-color: aqua;
+      color: azure;
+    }
+    a:hover{
+      font-size: 200px;
+      background-color: aqua;
+      background-color: burlywood;
+    }
+    a:active{
+      background-color: pink;
+      color: aquamarine;
+    }
+    a:visited{
+      background-color: cadetblue;
+      color: black;
+    } */
+   .lorem::before {
+    content: " celestia ";
+    color: rgb(100, 150, 237);
+   }
+   .lorem::after{
+    content: "eren yeager";
+    color: rgb(98, 0, 255);
+   }
+   ::selection{
+    background-color: yellow;
+    color: rgb(5, 241, 64);
+   }
+   ::marker{
+      color: red;
+   }
+    </style>
+</head>
+<body>
+ <!-- Pseduo class -->
+   <p class="hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint nisi debitis, ipsam vitae cumque voluptatem velit ut dolor consequatur corrupti. Harum doloribus ullam perferendis eveniet ab, error sit dicta repellendus commodi maxime ipsa, exercitationem similique ea voluptas, aliquid alias minus. Voluptas ducimus id sed illum molestias, incidunt quod molestiae.</p>
+  <input type="text">
+  <hr>
+<nav>
+  <a href="https://www.google.com/"> google</a> 
+  <a href="https://www.google.com/"> google</a> 
+  <a href="https://www.google.com/"> google</a> 
+  <a href="https://www.google.com/"> google</a> 
+  <a href="https://www.google.com/"> google</a> 
+</nav>
+<p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores eos repudiandae doloribus consequuntur distinctio eligendi ad ratione accusamus laudantium natus deleniti modi sint, deserunt quidem a molestias. In laudantium est nihil libero veritatis! Molestiae consequuntur laborum similique! Consequatur, quas quam harum nam dignissimos nihil iste reprehenderit fugiat saepe veritatis earum sunt quia aspernatur est officia repellat sequi a non provident reiciendis impedit exercitationem vero sint! Facere at vitae repudiandae nesciunt voluptatibus quaerat earum exercitationem ex soluta provident veniam magni saepe cupiditate in fuga, nobis aut laboriosam placeat, omnis voluptatem rem culpa labore accusamus. Fuga provident excepturi neque alias asperiores.</p>
+<ul>
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+</ul>
+</body>
+</html>
