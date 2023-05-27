@@ -86,7 +86,7 @@
   "python.testing.unittestArgs": [
     "-v",
     "-s",
-    ".",
+    "./PYTHON",
     "-p",
     "*test.py"
   ],
