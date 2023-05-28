@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* animation-name: colorchange; */
+            /* animation-duration: 10s;
+            animation-delay: 2s;
+            position: relative;
+            animation-iteration-count: infinite;
+             animation-direction: alternate; 
+             animation-fill-mode: backwards;
+            animation-timing-function: ease-in; */
+            animation: colorchange 3s ease-in 1s 3 forwards ;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+
+        }
+        /* #ease{
+            animation-timing-function: ease;
+        }
+        #linear{
+            animation-timing-function: linear;
+        }
+        #ease-in{
+            animation-timing-function: ease-in;
+        }
+        #ease-out{
+            animation-timing-function: ease-out;
+        } */
+        @keyframes colorchange {
+            0% { background-color: red;
+              left: 0px;
+              top: 0px;}
+            25% {background-color: rgb(195, 255, 0);
+              top: 0px;
+              left: 200px; }
+            50%{
+                background-color: cornflowerblue;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: powderblue;
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                background-color: chartreuse;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="ease">ease</div>
+<div id="linear">linear</div>
+<div id="ease-in">ease-in</div>
+<div id="ease-out">ease-out</div>
+<p>when animation end ,it goes to normal</p>
+</body>
+</html>
