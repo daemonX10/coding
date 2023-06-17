@@ -1,0 +1,53 @@
+@media (max-width:100px) {
+    body{
+      /* The `background-color` property is setting the background color of the `body` element. The
+      `color(from color srgb r g b)` value is a CSS function that creates a color value from the
+      specified sRGB red, green, and blue values (r, g, b). */
+        background-color:rgb(0, 255, 76);
+    }
+    div::after{
+        content: "dark rumer";
+        content: 'small phones';
+    }
+}
+@media (max-width:600px) and (min-width:100px) {
+    /* latest mobile like iphone 14 , 14pro , samsung device */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'latest mobiles, smart phones';
+    }
+}
+@media (min-width:600px) {
+    /* tablets in landscape */
+    body {
+            background-color: rgb(50, 205, 187);
+        }
+    
+        div::after {
+            content: "tablets in landscape";
+        }
+}
+@media (min-width:992px) {
+    /* laptops and bigger tabler */
+    body{
+        background-color: yellowgreen;
+    }
+    div::after{
+        content: "laptops and big tablets";
+    }
+}
+@media (min-width:1200px) {
+    /* bigger laptops and moniters */
+    body{
+        background-color: violet;
+    }
+    div:after{
+        content: 'bigger screens';
+    }
+    div{
+        text-align:center;
+        font-size: x-large;
+    }
+}

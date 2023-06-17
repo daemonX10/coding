@@ -1,0 +1,81 @@
+/* body {
+    background-color: red;
+}
+div {
+    text-align: center;
+    font-size: x-large;
+}
+div::after{
+    content: 'welcome to the demo';
+}
+@media (min-width:764px) {
+ body{
+    background-color: cornflowerblue;
+}    
+div::after{
+    content: "woah we are resposive";
+}
+
+}
+
+@media (min-width:900px){
+    body {
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'money is second god';
+        
+    }
+}
+@media (min-width:1000px) {
+body{
+    background-color: blueviolet;
+}
+div::after{
+    content: "for wider screen";
+}
+}
+@media (max-width:400px){
+    body{
+        background-color: cadetblue;
+    }
+    div{
+        text-decoration: overline;
+        text-align: start;
+        transition: ease-in;
+        content: "money";
+    }
+    div::after{
+        content: "black money";
+        color: whitesmoke;
+    }
+} */
+@media (max-width:1000px){
+body{
+    /* background-color: red;
+    background-image: url(https://w7.pngwing.com/pngs/507/245/png-transparent-all-might-my-hero-academia-drawing-chibi-all-might-chibi-manga-chibi-cartoon-thumbnail.png);  */
+}
+div{
+    text-align: center;
+    font-size: large;
+}
+div::after{
+    content: "welcome to paradise";
+}
+}
+@media( min-width:400px){
+body{
+    background-color: plum;
+}
+div::after{
+    content: "very small humanity";
+}
+}
+@media (min-width:400px) and (max-width:760px){
+    body{
+        background-color: burlywood;
+    }
+    div::after{
+        content: "medium range";
+    }
+}
