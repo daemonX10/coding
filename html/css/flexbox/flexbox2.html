@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box 2</title>
+    <style>
+        .container{
+            display: flex;
+            height: 300px;
+            border: 1px solid black;
+
+        }
+        .box{
+            /* flex-basis: 100px; 
+            to set size of flex item in flex container // priority is given to this and use to set vertical size that all i know */
+
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            color: cornflowerblue;
+            background-color: blanchedalmond;
+            
+            /* order: 3; use to set the numbering order  just like assending and dessending order */
+        }
+        .box2{
+            height: 100px;
+            width: 200px;
+            color: rgb(255, 240, 33);
+            background-color: rgb(53, 224, 11);, 
+            /* order: 1; */
+            
+             /* flex-grow: 2; used in conjunction with Flexbox layout to specify how much the element should grow to fill the available space in the container  */
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(139, 5, 5);
+            /* flex-grow: 2; */
+            flex-shrink: 10; /*  flex-shrink: 10; means that the element will shrink ten times more compared to other flexible items if there is not enough space to fit its content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex   -->
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>
