@@ -7,11 +7,15 @@
     <style>
         .container{
             display: grid;
-             height: 500px; 
-            grid-template-columns: repeat(3,1fr);
+             /* height: 500px;  */
+            grid-template-columns: repeat(1,1fr);
             /* grid-template-columns:minmax(10px,1fr) minmax(10px,1fr)minmax(10px,1fr); */
-            /* grid-template-rows: repeat(3,50px) */
-            grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+            grid-template-rows: repeat(1,50px)
+            /* grid-template-areas: "header header header" "main main sidebar" "footer footer footer"; */
+            /* gap: 10px; */
+            /* justify-content: center;
+            align-self:center; */
+
         }
         .box{
             height:100px;
@@ -20,19 +24,21 @@
         }
         .box1{
             background-color: red;
-            grid-area: header;
+            
         }
         .box2{
             background-color: rgb(121, 10, 97);
-            grid-template-areas: calc(header)
+           
             
         }
         .box3{
             background-color: rgb(0, 131, 22);
-            grid-area: sidebar;
+            /* grid-area: sidebar; */
         }
         .box4{
             background-color: rgb(0, 128, 202);
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
         .box5{
             background-color: rgb(74, 5, 201);
