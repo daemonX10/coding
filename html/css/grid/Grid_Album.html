@@ -7,17 +7,21 @@
     <style>
         .cont{
             display: grid;
-            align-items: flex-start;
+            height: 700px;
+            width: 700px;
+            grid-template-columns: repeat(3,1fr);
         }
     .box{
-        height: 100px;
-        width: 100px;
+        /* height: 100px;
+        width: 100px; */
     }
     .box1{
         background-color: red;
     }
     .box2{
         background-color: rgb(187, 255, 0);
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
     .box3{
         background-color: rgb(81, 150, 24);
@@ -33,9 +37,14 @@
     }
     .box7{
         background-color: #00ff00c2;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
     .box8{
         background-color: rgba(187, 43, 223, 0.623);
+    }
+    .box9{
+        background-color: cornflowerblue;
     }
     </style>
 </head>
@@ -49,6 +58,7 @@
         <div class="box box6">box6</div>
         <div class="box box7">box7</div>
         <div class="box box8">box8</div>
+        <div class="box box9">box9</div>
     </div>
     </div>
 </body>
