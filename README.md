@@ -10,4 +10,13 @@ hello , what you will get here
    * pointer
    * linklist
    * Time complexity
-   * 
+   * pattern
+   * digit question
+   * sorting algorithm
+3. java
+   * nothing
+4. python --( DATA SCIENCE )_ Here, i doing in jupyter notebook
+   * basic of python
+   * function
+   * loop
+   * many more(in progress) 
