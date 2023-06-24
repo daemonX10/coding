@@ -11,3 +11,38 @@ font-family: 'Poppins', sans-serif ,'Rubik Pixels', cursive;
     overflow: hidden;
 
 }
+ body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf1fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+ }
+
+li{
+    list-style: none;
+    cursor: pointer;
+ }
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: rgb(18,155,155);
+    padding:4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(18,155,155);
+    border:1px solid black;
+}
