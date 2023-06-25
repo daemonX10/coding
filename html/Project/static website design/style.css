@@ -105,14 +105,14 @@ input{
     
     font-weight: 800;
     font-size: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .hero_left_section h1 span{
     color: rgb(18,155,155);
     font-weight: 900;
     background-color: #dfdfe0;
-    padding: 0 15px;
+    padding: 0 10px;
 
 }
 
@@ -132,5 +132,39 @@ input{
     display: flex;
     flex-direction: column;
     width: 40%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;   
+}
+
+.hero_right_section_btn{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero_right_section img{
+     border: 400px;
+     width: 250px;
+     border-radius: 40%;
+}
+
+footer{
+    font-weight: 600;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer ul li i:hover{
+    display: flex;
+    background-color: #EDF1FD;
+    color: rgb(18,155,155);
     
 }
