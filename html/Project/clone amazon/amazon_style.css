@@ -9,4 +9,40 @@
     height: 60px;
     background-color: #0f1111;
     color: white;
+    display: flex;
+}
+
+.nav_logo{
+    height: 60px;
+    width: 113px;
+}
+.logo img {
+    height: 60px;
+    width: 113px;
+    background-size: cover;
+}
+
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border: 1px solid whitesmoke;
+}
+
+/* Box 2 */
+.add_icon{
+    display: flex;
+    align-items: center;
+}
+
+.address_first{
+    color: #cccccc;
+    font-size: .85rem;
+    margin: 15px 0px 0px 15px;
+
+}
+
+.address_second{
+    font-size: 1rem;
+    align-items: end;
 }
