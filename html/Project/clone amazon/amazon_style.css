@@ -10,6 +10,7 @@
     background-color: #0f1111;
     color: white;
     display: flex;
+    align-items: center;
 }
 
 .nav_logo{
@@ -30,6 +31,11 @@
 }
 
 /* Box 2 */
+
+/* .nav_address{
+    height: 60px;
+    width: 88.50px;
+} */
 .add_icon{
     display: flex;
     align-items: center;
@@ -38,11 +44,11 @@
 .address_first{
     color: #cccccc;
     font-size: .85rem;
-    margin: 15px 0px 0px 15px;
+    margin-left: 15px;
 
 }
 
 .address_second{
     font-size: 1rem;
-    align-items: end;
+    margin: 4px;
 }
