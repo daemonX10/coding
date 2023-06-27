@@ -111,3 +111,33 @@
     font-size: 0.85rem;
     font-weight: 600;
 }
+
+.nav_cart i{
+    font-size:30px;
+}
+
+.nav_cart{
+    width: 84px;
+    height: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f1111;
+}
+
+.nav_cart .border{
+    border: 2px solid transparent;
+}
+
+.nav_cart .border:hover{
+    border: 2px solid whitesmoke;
+}
+
+/* Panel  */
+.panel_ops{
+    display: flex;
+    justify-content: space-evenly;
+
+}
