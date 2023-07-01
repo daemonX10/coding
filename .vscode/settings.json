@@ -1,5 +1,9 @@
 {
     "deepscan.enable": true,
     "docwriter.language": "English",
-    "docwriter.hotkey.windows": "Ctrl + ."
+    "docwriter.hotkey.windows": "Ctrl + .",
+    "cSpell.words": [
+        "pwskills",
+        "sudh"
+    ]
 }
