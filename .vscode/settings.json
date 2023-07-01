@@ -8,5 +8,7 @@
         "mikasa",
         "pwskills",
         "sudh"
-    ]
+    ],
+    "path-intellisense.absolutePathTo": "code gpt",
+    "path-intellisense.ignoreTsConfigBaseUrl": true
 }
