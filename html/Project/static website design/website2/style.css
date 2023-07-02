@@ -9,7 +9,7 @@
  body {
      height: 100vh;
      width: 100vw;
-     background-color: #edf1fd;
+     background-color: white;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -17,9 +17,10 @@
  }
 .header{
     height: 40px;
-    width: 1rem;
-    color: aqua;
-    background-color: black;
+    width: 100vw;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: flex;
 }
 
 .header logo {
