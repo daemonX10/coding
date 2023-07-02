@@ -136,8 +136,28 @@
 }
 
 /* Panel  */
-.panel_ops{
+.panel{
+    height: 40px;
+    background-color: #222f3d;
     display: flex;
+    color: white;
     justify-content: space-evenly;
+    align-items: center;
+}
 
+.panel_ops p {
+    width: fit-content;
+    display: inline;
+    margin-left: 15px;
+    font-size: .85rem;
+}
+
+.panel_ops{
+    width: 70%;
+    align-items: center;
+}
+
+.panel_deals{
+    font-size: .9rem;
+    font-weight: 700;
 }
