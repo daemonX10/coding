@@ -194,12 +194,31 @@
 .shop_section{
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(to top, #f3f3f3, #ccc9c9);
+    background: linear-gradient(to top, #f3f3f3, #ADC1C4 );
 }
 
 .box{
-    border: 2px solid black;
     width: 23%;
-    height: 300px;
+    height: 400px;
     background-color: white;
+}
+
+/* box1 */
+
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_img{
+    background-image: url("assets/box1_image.jpg");
+    width:90%;
+    height: 85%;
+    background-size: cover;
+}
+
+.box1 span{
+    color: #007185;
 }
