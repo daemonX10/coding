@@ -188,3 +188,18 @@
 .hero_msg a{
     color:#007185;
 }
+
+/* product section (shoping) */
+
+.shop_section{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to top, #f3f3f3, #ccc9c9);
+}
+
+.box{
+    border: 2px solid black;
+    width: 23%;
+    height: 300px;
+    background-color: white;
+}
