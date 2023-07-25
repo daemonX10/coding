@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JAVASCRIPT </title>
+</head>
+<body>
+    <h1>Removing HTML  Element</h1>
+    <ul>
+        <li class="one">one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+
+    // Create 
+
+    let title =document.createElement("h1");
+    title.className="title";
+    title.style.fontSize="24px";
+    title.textContent="Creating HTML Element";
+    document.body.appendChild(title);
+
+    // Removing
+    const ul =document.querySelector("ul");
+    console.log(ul.innerText);
+    ul.removeChild((document.querySelector(".one")));
+    console.log(ul.innerText);
+
+    const lists=document.querySelectorAll("li");
+    console.log(lists);
+    for (let list of lists){
+        ul.removeChild(list);
+    }
+    console.log(ul.innerText);
+
+
+    </script>
+</body>
+</html>
