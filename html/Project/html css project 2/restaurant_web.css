@@ -2,9 +2,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(pexels-maxyne-barcel-10402282\ 1\ \(2\).png);
+}
 
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: url("pexels-maxyne-barcel-10402282\ 1\ \(2\).png");
+    /* background-image: url("pexels-maxyne-barcel-10402282\ 1\ \(2\).png"); */
+    /* background-size: cover; */
 }
