@@ -1,6 +1,10 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: poppins;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pexels-maxyne-barcel-10402282\ 1\ \(2\).png");
+}
