@@ -6,12 +6,12 @@
 
 body{
     width: 100%;
-    height: 100%;
-    background-image: url(pexels-maxyne-barcel-10402282\ 1\ \(2\).png);
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(161, 148, 148, 0.6),rgba(226, 0, 0, 0.116),rgba(18, 24, 4, 0.6)), url(pexels-maxyne-barcel-10402282\ 1\ \(2\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    flex-wrap: nowrap;
     border-radius: 20px;
+    
 }
 
 .container{
@@ -53,8 +53,14 @@ a{
 
 button{
     padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #ec1f1f;
+    border: none;
     }
 
+.hero button{
+    margin: 20px;
+}
 .hero{
     padding-top: 50px;
     color: #FFC233;
@@ -64,5 +70,6 @@ button{
     text-align: center;
 }
 h1{
+    width: 60vw;
     font-size: 500%;
 }
