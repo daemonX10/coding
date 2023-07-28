@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(228, 243, 92);
+}
