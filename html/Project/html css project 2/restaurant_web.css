@@ -33,6 +33,12 @@ body{
     
 }
 
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .option ul {
     list-style: none;
     width: 45vw;
@@ -42,6 +48,12 @@ body{
 a{
     color:#FFC233;
     text-decoration: none;
+}
+
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero{
