@@ -3,8 +3,37 @@
     box-sizing: border-box;
     padding: 0;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: rgb(228, 243, 92);
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #7475DA;
+    display: fle;
+    flex-direction:row;
+    padding: 0 10px;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+}
+
+.nav_list ul{
+    width: 45vw;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.nav_list ul li a{
+    list-style: none;
+    text-decoration: none;
 }
