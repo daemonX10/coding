@@ -75,7 +75,49 @@ function oneMoreHello(){
 /* `setInterval` is a built-in JavaScript function that repeatedly calls a function or executes a code
 snippet at a specified time interval. It takes two parameters: the function or code to be executed,
 and the time interval (in milliseconds) between each execution. */
-setInterval(oneMoreHello,1000);
+
+
+// setInterval(oneMoreHello,1000);
+
+
 /* `setTimeout(oneMoreHello,2000);` is setting a timer to execute the `oneMoreHello` function after a
 delay of 2000 milliseconds (2 seconds). */
-setTimeout(oneMoreHello,2000);
+
+
+// setTimeout(oneMoreHello,2000);
+
+
+// More about hof
+function useFunction(func){
+    return func();
+}
+
+useFunction(function (){
+    console.log("7");
+});
+
+// Calculator Function
+
+function CalculatorFunction(operation,initialValue,numbers){
+    let total=initialValue;
+    for ( let number of numbers){
+        total=operation(total,number);
+    }
+    return total;
+}
+function sum(n1,n2){
+    return n1+n2;
+}
+function multiply(n1,n2){
+    return n1*n2;
+}
+function divide(n1,n2){
+    return n1/n2;
+}
+function modules(n1,n2){
+    return n1%n2;
+}
+
+console.log(CalculatorFunction(sum,1,[1,2,3,4,5]),
+CalculatorFunction(multiply,2,[1,2,3,4,5]),
+CalculatorFunction(divide,10,[1,2,3,4,5]));
