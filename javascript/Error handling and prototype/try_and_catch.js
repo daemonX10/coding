@@ -1,9 +1,17 @@
-function isEvenOrOdd(x){
-    if(x%2==0){
-        return "even";
+
+
+/// error handling in javascript
+console.log("hello world");
+console.log("money");
+let assignmentCompletion=false;
+
+try {
+    if(assignmentCompletion===false){
+        throw new Error("You have not completed the assignment");
     }
-    else{
-        return false;
-    }
+} catch (error) {
+    console.log(error.message);
+}finally{
+    console.log("You can now create Static Webpages");
 }
-console.log(isEvenOrOdd(21));
+console.log("you are now learning javascript");
