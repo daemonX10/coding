@@ -57,6 +57,7 @@ a{
 }
 
 .hero{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +75,7 @@ button{
     margin: 20px;
 }
 .hero{
+    width: 100vw;
     padding-top: 50px;
     color: #FFC233;
     display: flex;
@@ -83,5 +85,11 @@ button{
 }
 h1{
     width: 60vw;
-    font-size: 500%;
+    overflow: hidden;
+    font-size: 6vw;
+    
+}
+.image_scroll{
+    width: 3vw;
+    height: 2vh;
 }
